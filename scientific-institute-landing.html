@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Научный Консалтинг — Academic Excellence & Scientific Research</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Playfair+Display:wght@700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <canvas id="particleCanvas"></canvas>
+        </div>
+        <div class="container hero-content">
+            <p class="hero-subtitle">ACADEMIC EXCELLENCE & SCIENTIFIC RESEARCH</p>
+            <h1 class="hero-title">Научный консалтинг<br>уровня PhD.</h1>
+            <p class="hero-description">
+                Реализуем ВКР, диссертации и исследования по медицинской психологии
+                под руководством докторов наук. Математическая точность,
+                верифицируемая эмпирика, академический стиль.
+            </p>
+            <button class="cta-button">Записаться на консилиум экспертов</button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- The Board of Experts -->
+    <section class="experts" id="experts">
+        <div class="container">
+            <h2 class="section-title">The Board of Experts</h2>
+            <p class="section-subtitle">Команда, где каждый — учёный с международным признанием</p>
+
+            <div class="experts-grid">
+                <!-- Expert 1 -->
+                <div class="expert-card" data-expert="1">
+                    <div class="expert-photo">
+                        <div class="photo-placeholder">Dr.</div>
+                    </div>
+                    <h3 class="expert-name">Dr. Иванова А.С.</h3>
+                    <p class="expert-title">Доктор психологических наук</p>
+                    <p class="expert-role">Идеолог и главный методолог</p>
+                    <div class="expert-metrics">
+                        <span class="metric">Scopus h-index: 15</span>
+                        <span class="metric">42 публикации</span>
+                    </div>
+                </div>
+
+                <!-- Expert 2 -->
+                <div class="expert-card" data-expert="2">
+                    <div class="expert-photo">
+                        <div class="photo-placeholder">Dr.</div>
+                    </div>
+                    <h3 class="expert-name">Dr. Петров В.М.</h3>
+                    <p class="expert-title">Доктор филологических наук</p>
+                    <p class="expert-role">Рецензирование и лингвистическая чистота</p>
+                    <div class="expert-metrics">
+                        <span class="metric">WoS h-index: 12</span>
+                        <span class="metric">38 публикаций</span>
+                    </div>
+                </div>
+
+                <!-- Expert 3 -->
+                <div class="expert-card" data-expert="3">
+                    <div class="expert-photo">
+                        <div class="photo-placeholder">PhD</div>
+                    </div>
+                    <h3 class="expert-name">Cand. Sci. Сидоров К.А.</h3>
+                    <p class="expert-title">Кандидат математических наук</p>
+                    <p class="expert-role">Архитектор данных. Статистика в SPSS/R</p>
+                    <div class="expert-metrics">
+                        <span class="metric">25 публикаций</span>
+                    </div>
+                </div>
+
+                <!-- Expert 4 -->
+                <div class="expert-card" data-expert="4">
+                    <div class="expert-photo">
+                        <div class="photo-placeholder">PhD</div>
+                    </div>
+                    <h3 class="expert-name">Cand. Sci. Алексеев Д.И.</h3>
+                    <p class="expert-title">Кандидат технических наук</p>
+                    <p class="expert-role">Lead Developer. Программирование эксп. сред</p>
+                    <div class="expert-metrics">
+                        <span class="metric">Python, R, VR</span>
+                    </div>
+                </div>
+
+                <!-- Expert 5 -->
+                <div class="expert-card" data-expert="5">
+                    <div class="expert-photo">
+                        <div class="photo-placeholder">PhD</div>
+                    </div>
+                    <h3 class="expert-name">Cand. Sci. Козлова Е.Н.</h3>
+                    <p class="expert-title">Кандидат психологических наук</p>
+                    <p class="expert-role">Социальная психология</p>
+                    <div class="expert-metrics">
+                        <span class="metric">18 публикаций</span>
+                    </div>
+                </div>
+
+                <!-- Expert 6 -->
+                <div class="expert-card" data-expert="6">
+                    <div class="expert-photo">
+                        <div class="photo-placeholder">PhD</div>
+                    </div>
+                    <h3 class="expert-name">Cand. Sci. Морозов П.С.</h3>
+                    <p class="expert-title">Кандидат психологических наук</p>
+                    <p class="expert-role">Семейная психология</p>
+                    <div class="expert-metrics">
+                        <span class="metric">21 публикация</span>
+                    </div>
+                </div>
+
+                <!-- Expert 7 -->
+                <div class="expert-card" data-expert="7">
+                    <div class="expert-photo">
+                        <div class="photo-placeholder">PhD</div>
+                    </div>
+                    <h3 class="expert-name">Cand. Sci. Новикова О.В.</h3>
+                    <p class="expert-title">Кандидат психологических наук</p>
+                    <p class="expert-role">Киберпсихология</p>
+                    <div class="expert-metrics">
+                        <span class="metric">16 публикаций</span>
+                    </div>
+                </div>
+
+                <!-- Expert 8 -->
+                <div class="expert-card" data-expert="8">
+                    <div class="expert-photo">
+                        <div class="photo-placeholder">PhD</div>
+                    </div>
+                    <h3 class="expert-name">Cand. Sci. Соколова М.А.</h3>
+                    <p class="expert-title">Кандидат психологических наук</p>
+                    <p class="expert-role">Психология личности</p>
+                    <div class="expert-metrics">
+                        <span class="metric">19 публикаций</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="technology" id="technology">
+        <div class="container">
+            <h2 class="section-title">Технологический стек</h2>
+            <p class="section-subtitle">Математика и IT в психологии</p>
+
+            <div class="tech-grid">
+                <div class="tech-card glass">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 50 50" fill="none">
+                            <rect x="10" y="10" width="30" height="30" stroke="#64FFDA" stroke-width="2"/>
+                            <path d="M15 25 L25 35 L35 15" stroke="#64FFDA" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Data Science в психологии</h3>
+                    <p>Мы не используем Excel для расчетов. Только программные методы проверки гипотез.</p>
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>R</span>
+                        <span>SPSS</span>
+                        <span>Jamovi</span>
+                    </div>
+                </div>
+
+                <div class="tech-card glass">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 50 50" fill="none">
+                            <circle cx="25" cy="25" r="15" stroke="#64FFDA" stroke-width="2"/>
+                            <circle cx="25" cy="25" r="5" fill="#64FFDA"/>
+                        </svg>
+                    </div>
+                    <h3>Custom Experiments</h3>
+                    <p>Пишем софт под ваш эксперимент. От VR-симуляций до трекинга поведения пользователей в сети.</p>
+                    <div class="tech-tags">
+                        <span>Unity</span>
+                        <span>WebGL</span>
+                        <span>Eye-tracking</span>
+                    </div>
+                </div>
+
+                <div class="tech-card glass">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 50 50" fill="none">
+                            <path d="M10 15 L40 15 M10 25 L40 25 M10 35 L40 35" stroke="#64FFDA" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Clean Data</h3>
+                    <p>Автоматизированная очистка выборки от «шума» и недобросовестных респондентов.</p>
+                    <div class="tech-tags">
+                        <span>Machine Learning</span>
+                        <span>Data Validation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievements">
+                <div class="achievement-item">
+                    <div class="achievement-number" data-target="15000">0</div>
+                    <p>Обработанных анкет</p>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-number" data-target="127">0</div>
+                    <p>Завершённых проектов</p>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-number" data-target="98">0</div>
+                    <p>% защит с отличием</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Pricing -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">The Investment</h2>
+            <p class="section-subtitle">Инвестиция в научную карьеру</p>
+
+            <div class="services-grid">
+                <div class="service-card glass">
+                    <div class="service-badge">Professional</div>
+                    <h3>Медицинский экстернат</h3>
+                    <p class="service-description">
+                        Полное сопровождение переподготовки медицинских специалистов.
+                        Методическая поддержка и консультации.
+                    </p>
+                    <ul class="service-features">
+                        <li>Методическое сопровождение</li>
+                        <li>Рецензирование работ</li>
+                        <li>Консультации экспертов</li>
+                    </ul>
+                    <button class="service-button">Рассчитать бюджет</button>
+                </div>
+
+                <div class="service-card glass featured">
+                    <div class="service-badge highlight">Premium</div>
+                    <h3>ВКР Premium</h3>
+                    <p class="service-description">
+                        Глубокая эмпирика + статпакет + филологический контроль.
+                        Полный цикл от дизайна до защиты.
+                    </p>
+                    <ul class="service-features">
+                        <li>Уникальное эмпирическое исследование</li>
+                        <li>Многомерный статистический анализ</li>
+                        <li>Филологическая рецензия</li>
+                        <li>Подготовка к защите</li>
+                        <li>Публикация в РИНЦ/ВАК</li>
+                    </ul>
+                    <button class="service-button primary">Рассчитать бюджет</button>
+                </div>
+
+                <div class="service-card glass">
+                    <div class="service-badge">Enterprise</div>
+                    <h3>Scientific Unit</h3>
+                    <p class="service-description">
+                        Разработка дизайна и проведение уникального исследования с нуля.
+                        Для диссертаций и грантовых заявок.
+                    </p>
+                    <ul class="service-features">
+                        <li>Дизайн исследования</li>
+                        <li>Разработка инструментария</li>
+                        <li>Сбор и анализ данных</li>
+                        <li>Научная статья</li>
+                    </ul>
+                    <button class="service-button">Рассчитать бюджет</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reality Check -->
+    <section class="comparison" id="comparison">
+        <div class="container">
+            <h2 class="section-title">Reality Check</h2>
+            <p class="section-subtitle">Почему мы не биржа фриланса</p>
+
+            <div class="comparison-table glass">
+                <div class="comparison-header">
+                    <div class="comparison-col">Параметр</div>
+                    <div class="comparison-col faded">Биржи фриланса</div>
+                    <div class="comparison-col highlighted">Наше бюро</div>
+                </div>
+
+                <div class="comparison-row">
+                    <div class="comparison-col">
+                        <strong>Сбор данных</strong>
+                    </div>
+                    <div class="comparison-col faded">
+                        <span class="icon-cross">✗</span>
+                        Рисованные анкеты
+                    </div>
+                    <div class="comparison-col highlighted">
+                        <span class="icon-check">✓</span>
+                        Верифицированные панели
+                    </div>
+                </div>
+
+                <div class="comparison-row">
+                    <div class="comparison-col">
+                        <strong>Статистика</strong>
+                    </div>
+                    <div class="comparison-col faded">
+                        <span class="icon-cross">✗</span>
+                        Среднее значение
+                    </div>
+                    <div class="comparison-col highlighted">
+                        <span class="icon-check">✓</span>
+                        Многомерный анализ
+                    </div>
+                </div>
+
+                <div class="comparison-row">
+                    <div class="comparison-col">
+                        <strong>Текст работы</strong>
+                    </div>
+                    <div class="comparison-col faded">
+                        <span class="icon-cross">✗</span>
+                        Рерайт из интернета
+                    </div>
+                    <div class="comparison-col highlighted">
+                        <span class="icon-check">✓</span>
+                        Академическая рецензия
+                    </div>
+                </div>
+
+                <div class="comparison-row">
+                    <div class="comparison-col">
+                        <strong>Экспертиза</strong>
+                    </div>
+                    <div class="comparison-col faded">
+                        <span class="icon-cross">✗</span>
+                        Студенты и магистры
+                    </div>
+                    <div class="comparison-col highlighted">
+                        <span class="icon-check">✓</span>
+                        Доктора и кандидаты наук
+                    </div>
+                </div>
+
+                <div class="comparison-row">
+                    <div class="comparison-col">
+                        <strong>Программные методы</strong>
+                    </div>
+                    <div class="comparison-col faded">
+                        <span class="icon-cross">✗</span>
+                        Excel и онлайн-калькуляторы
+                    </div>
+                    <div class="comparison-col highlighted">
+                        <span class="icon-check">✓</span>
+                        Python, R, SPSS
+                    </div>
+                </div>
+
+                <div class="comparison-row">
+                    <div class="comparison-col">
+                        <strong>Публикации</strong>
+                    </div>
+                    <div class="comparison-col faded">
+                        <span class="icon-cross">✗</span>
+                        Не предусмотрены
+                    </div>
+                    <div class="comparison-col highlighted">
+                        <span class="icon-check">✓</span>
+                        РИНЦ, ВАК, Scopus
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>Готовы начать научный проект?</h2>
+            <p>Запишитесь на консилиум экспертов и получите детальную оценку вашего исследования</p>
+            <button class="cta-button">Записаться на консультацию</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Scientific Research Institute. Academic Excellence & Scientific Research.</p>
+            <p class="footer-note">Конфиденциальность гарантирована. NDA с каждым клиентом.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Expert Details -->
+    <div class="modal" id="expertModal">
+        <div class="modal-content glass">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <h3 class="modal-title">Dr. Иванова А.С.</h3>
+                <h4>Научные публикации</h4>
+                <ul class="publications-list">
+                    <li>Ivanova A.S. (2023). "Cognitive patterns in digital behavior." Journal of Medical Psychology, 15(3), 245-267. <strong>Scopus Q1</strong></li>
+                    <li>Ivanova A.S., Petrov V.M. (2022). "Neuroplasticity and learning." Psychological Science, 28(4), 112-134. <strong>WoS</strong></li>
+                    <li>Иванова А.С. (2021). "Методология исследований в клинической психологии." Вестник МГУ, Серия 14, №2, 78-95. <strong>ВАК</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
